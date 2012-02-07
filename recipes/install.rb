@@ -21,6 +21,6 @@ execute "add root to libvirt group" do
 end
 
 execute "set swappiness=0" do
-  command %{"vm.swappiness=0" >> /etc/sysctl.conf}
+  command %{echo "vm.swappiness=0" >> /etc/sysctl.conf}
 end
 
