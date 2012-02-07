@@ -1,3 +1,5 @@
+require_recipe 'apt'
+
 execute "apt-get-update" do
   notifies :run, resources(:execute => "apt-get update"), :immediately
 end
