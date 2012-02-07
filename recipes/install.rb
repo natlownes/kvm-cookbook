@@ -1,5 +1,5 @@
 execute "apt-get-update" do
-  notifies :run, resources(:execute => "apt-get-update"), :immediately
+  notifies :run, resources(:execute => "apt-get update"), :immediately
 end
 
 execute "apt-get-dist-upgrade" do

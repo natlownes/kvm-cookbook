@@ -17,3 +17,4 @@
 # limitations under the License.
 #
 
+require_recipe 'apt'
